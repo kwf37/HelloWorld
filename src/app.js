@@ -1,6 +1,11 @@
-window.CESIUM_BASE_URL = '../dist';
+import {Cesium,a} from './cesium.js';
+console.log(Cesium);
+var viewer= new Cesium.Viewer('cesiumContainer');
+
+
+/*window.CESIUM_BASE_URL = '../public';
 require('../node_modules/cesium/Build/Cesium/Cesium.js');
 require('../node_modules/cesium/Build/Cesium/Widgets/widgets.css');
-var Cesium = window.Cesium;
+const Cesium = window.Cesium;
 
-var viewer = new Cesium.Viewer('cesiumContainer');
+const Viewer = new Cesium.Viewer('cesiumContainer');*/

@@ -13,7 +13,8 @@ module.exports = {
         loaders: [
             { test: /\.css$/, use: ['style-loader', 'css-loader'] },
             { test: /\.(png|gif|jpg|jpeg)$/, use: 'file-loader'},
-            { test: /Cesium\.js$/, use: 'script-loader' }
+            { test: /Cesium\.js$/, use: 'script-loader' },
+            { test: /\.js$/, exclude: /Cesium\.js$/, use: {loader: 'babel-loader', options:{presets: ['es2015']}}}
         ]
   }
 };
